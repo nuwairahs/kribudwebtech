@@ -1,26 +1,27 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import { Hero } from "./components/Hero";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
-import Process from "./components/Process";
-import Contact from "./components/Contact";
-import About from "./components/About";
-import Clients from "./components/Clients";
+import About from './components/About.js'
+import Clients from './components/Clients.js'
+import Contact from './components/Contact.js'
+import Footer from './components/Footer.js'
+import Hero from './components/Hero.js'
+import NavBar from './components/NavBar.js'
+import Process from './components/Process.js'
+import ServiceCard from './components/ServiceCard.js'
+import Services from './components/Services.js'
 
-const App = () => {
+function App() {
   return (
-    <>
+    <div>
       <NavBar />
       <Hero />
-      <Services />
       <About />
-      <Clients />
+      <Services />
       <Process />
+      <Clients />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default App;
+export default App
